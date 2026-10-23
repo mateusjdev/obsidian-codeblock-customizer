@@ -90,12 +90,9 @@ function createCopyButton(displayLanguage: string) {
   container.classList.add(`codeblock-customizer-copy-code-button`);
   container.setAttribute("aria-label", "Copy code");
 
-  if (displayLanguage) {
-    if (displayLanguage)
-      container.setText(displayLanguage);
-    else
-      setIcon(container, "copy");
-  } else
+  if (displayLanguage)
+    container.setText(displayLanguage);
+  else
     setIcon(container, "copy");
 
   return container;

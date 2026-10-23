@@ -389,7 +389,6 @@ export function headerExtension(plugin: CodeBlockCustomizerPlugin, settings: Cod
           addTextToClipboard(blockContent);
         },
         icon: "copy",
-        text: parameters.displayLanguage,
         enabled: showButton
       },
       {
